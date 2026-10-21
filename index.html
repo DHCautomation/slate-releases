@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slate releases</title>
+<meta name="description" content="SlateTap ST-1 firmware releases: update feeds, release notes and the USB flasher pages.">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #1a2332; --card: #1e2d3d; --line: #2b3f55; --text: #e6edf3; --muted: #9fb0c3;
+    --teal: #2dd4bf; --warn: #f5b041;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; padding: 28px 16px 48px; }
+  h1 { font-size: 30px; margin: 0 0 4px; letter-spacing: -0.5px; }
+  h1 span { color: var(--teal); }
+  h2 { font-size: 22px; margin: 32px 0 8px; }
+  h3 { font-size: 17px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; margin: 16px 0; }
+  .card h3 { margin-bottom: 8px; }
+  ul { margin: 0; padding-left: 20px; } li { margin: 6px 0; }
+  code { color: var(--teal); overflow-wrap: anywhere; }
+  a { color: var(--teal); }
+  .muted { color: var(--muted); font-size: 14px; }
+  .channel { margin: 20px 0; }
+  details.channel > summary { cursor: pointer; font-weight: 600; font-size: 17px; }
+  .rel { border-top: 1px solid var(--line); padding: 12px 0; }
+  .rel .head { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+  .rel .ver { font-weight: 600; font-size: 17px; }
+  .rel .date { color: var(--muted); font-size: 14px; }
+  .rel p { margin: 4px 0 6px; }
+  .links { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Slate<span>Tap</span> releases</h1>
+  <p class="sub">Firmware for the SlateTap ST-1 &middot; DHC Automation and Controls</p>
+
+  <div class="card">
+    <h3>Update a SlateTap that runs</h3>
+    <ul>
+      <li><strong>0.3.0 and later:</strong> System &gt; Updates: pick the channel (Stable for sites, Beta for test
+        units), Check now, then Update now. The unit downloads both images and checks them itself.</li>
+      <li><strong>0.2.0:</strong> Settings &gt; Fleet, update manifest URL
+        <code>https://dhcautomation.github.io/slate-releases/slatetap-st1/stable/versions.json</code> (or <code>.../beta/versions.json</code>), then Check
+        and Update. Once on 0.3.x, the unit keeps that channel by itself.</li>
+      <li><strong>Without internet on the unit:</strong> download the firmware and the web app images of a version
+        below on a phone or laptop, then install them by file: the firmware first, then the web app.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Flash a new or wiped unit</h3>
+    <ul>
+      <li>Open the version's <strong>Flash (USB)</strong> page in Chrome or Edge on a computer. Phones and Firefox
+        cannot flash.</li>
+      <li>USB only: disconnect the 24 VAC wires first. USB and 24 VAC are never connected at the same time.</li>
+      <li>A fresh install erases the unit: settings, programs and points are lost. Take a backup of a running unit
+        first.</li>
+    </ul>
+  </div>
+
+  <section id="slatetap-st1">
+  <h2>SlateTap ST-1</h2>
+  <details class="channel"><summary>Test</summary>
+  <p class="muted">The bench unit&#x27;s channel: builds that have not soaked yet. Not for sites. Feed: <a href="slatetap-st1/test/versions.json"><code>slatetap-st1/test/versions.json</code></a></p>
+  <div class="rel"><div class="head"><a class="ver" href="files/0.2.0/index.html">0.2.0</a><span class="date">2026-10-17</span></div>
+    <p>SlateTap 0.2.0: point-aware Logic, the site database, a BACnet server with router and BBMD, Modbus RTU and TCP, graphics, trends, alarms and the update check.</p>
+    <div class="links"><a href="files/0.2.0/index.html">Flash (USB)</a> <a href="files/0.2.0/notes.txt">Notes</a> <a href="files/0.2.0/slatetap-0.2.0.bin">Firmware</a> <a href="files/0.2.0/www-0.2.0.bin">Web app</a> <a href="files/0.2.0/slatetap-0.2.0-merged.bin">Merged image</a> <a href="files/0.2.0/SHA256SUMS.txt">SHA-256</a></div></div>
+  </details>
+  </section>
+
+  <p class="muted">Every image is listed with its SHA-256 in the version's <code>SHA256SUMS.txt</code>. Third-party
+    licenses and the bacnet-stack patch: <a href="LICENSES/README.md">LICENSES</a>.</p>
+</main>
+</body>
+</html>

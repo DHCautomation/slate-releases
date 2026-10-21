@@ -1,0 +1,11 @@
+SlateTap 0.2.0: point-aware Logic, the site database, a BACnet server with router and BBMD, Modbus RTU and TCP, graphics, trends, alarms and the update check.
+
+- Live, point-aware Logic with virtual points and 17 new blocks.
+- Site database.
+- BACnet server, router and BBMD.
+- Modbus RTU and TCP.
+- Internet sharing (NAT) and time.
+- Graphics, trends and alarms.
+- Fleet heartbeat and update check.
+- From 0.1.0 by file (Settings > Firmware update): back up first, then the firmware image, then the web app image. Settings, pinned points and programs are kept.
+- Not proven yet: the MS/TP side of the router, Modbus RTU on a real wire.

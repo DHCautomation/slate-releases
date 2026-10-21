@@ -1,0 +1,3 @@
+c7154d78d4268f7746c55da5a8c24b696739a8fe76eeef2fc456844ee0c6ce2b  slatetap-0.2.0-merged.bin
+c7c2eeeee4ce35dba5b366f4e09b28a36e8b67d0b21532d3bd8fdbbb21b62759  slatetap-0.2.0.bin
+c2d35da9c1d0f0ee889d5647a432e769de67f57fec18dcc0fb5ee0463d54a0d8  www-0.2.0.bin
