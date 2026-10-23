@@ -1,0 +1,9 @@
+Phase E of 0.3.0: the tech tool. An MS/TP analyzer with a capture for Wireshark, a Modbus frame log, OLED alarm and update cards, and a printable commissioning report.
+
+- MS/TP analyzer (System > Support): always on while MS/TP runs. A bus verdict over the last 10 minutes, every station with its timings against the standard limits, and the SlateTap's own pauses counted apart from the bus.
+- Capture: record the trunk into memory and download a .pcap for Wireshark; "stop after an error" keeps the frames around an intermittent fault.
+- Modbus frame log: what the SlateTap sends on RS485 and what comes back, with the bytes, for 1 to 60 minutes; text and CSV downloads.
+- OLED: an Alarms card while an alarm is listed (a new critical or warning alarm takes the screen briefly), an Update card, Updating with its progress during an install, and the bus verdict on the MS/TP card.
+- Commissioning report: a printable record of the set-up (Print, or Save as PDF), without passwords, tokens or keys. Every page now prints in a light theme.
+- The diagnostics file now carries the analyzer, the capture state and the frame logs.
+- RS485: the SlateTap no longer holds the trunk while it saves to flash (its UART keeps working through the write), and after its own pauses it never answers a token the bus has moved past.
