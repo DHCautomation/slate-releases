@@ -8,7 +8,7 @@ meets every obligation of every license is for DHC Automation and Controls to de
 
 | Image | Third-party software | Here |
 |---|---|---|
-| `slatetap-<version>.bin` (firmware) | ESP-IDF and the components it brings (FreeRTOS, lwIP, newlib, wpa_supplicant, http_parser, Mbed TLS, ESP-MQTT, cJSON), Espressif's mDNS component, esp_littlefs with LittleFS, Nayuki's QR Code generator, bacnet-stack, the X11 misc-fixed bitmap fonts | `COMPONENTS.txt` (versions, licenses, sources) and one folder per component |
+| `slatetap-<version>.bin` (firmware) | ESP-IDF and the components it brings (FreeRTOS, lwIP, newlib, wpa_supplicant, http_parser, Mbed TLS, ESP-MQTT, cJSON), Espressif's mDNS component, esp_littlefs with LittleFS, Nayuki's QR Code generator, Monocypher (the signature check of online updates), bacnet-stack, the X11 misc-fixed bitmap fonts | `COMPONENTS.txt` (versions, licenses, sources) and one folder per component |
 | `www-<version>.bin` (web app) | the web app's npm packages (React, React Flow and its d3 modules, the Inter, Outfit and JetBrains Mono fonts) | `web-app-packages.txt` |
 | `slatetap-<version>-merged.bin` (USB image) | the two above, plus ESP-IDF's second-stage bootloader | as above |
 
@@ -20,6 +20,7 @@ meets every obligation of every license is for DHC Automation and Controls to de
 | `mbedtls/`, `esp-mqtt/`, `esp-mdns/` | Apache-2.0 |
 | `freertos/`, `cjson/`, `qrcodegen/`, `esp_littlefs/`, `http_parser/` | MIT |
 | `lwip/`, `littlefs/`, `wpa_supplicant/` | BSD-3-Clause |
+| `monocypher/` | CC0-1.0 or BSD-2-Clause, at the user's choice (`LICENCE.md`; the authors in `AUTHORS.md`) |
 | `newlib/` | BSD and others, per file (`COPYING.NEWLIB`) |
 | `bacnet-stack/` | GPL-2.0-or-later with the GCC linking exception, MIT and BSD-3-Clause, per file (`FILES.txt`); see below |
 

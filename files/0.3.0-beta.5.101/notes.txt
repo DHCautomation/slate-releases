@@ -1,0 +1,1 @@
+Bench test build of signed online updates: each update image carries an ed25519 signature that the unit checks before it downloads anything. Not for sites.

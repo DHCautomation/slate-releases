@@ -50,6 +50,12 @@ QR Code generator (C)
   text     qrcodegen/
   source   https://github.com/nayuki/QR-Code-generator
 
+Monocypher (ed25519 signature check of update images)
+  version  4.0.3
+  license  BSD-2-Clause (dual-licensed CC0-1.0 or BSD-2-Clause; the BSD option)
+  text     monocypher/
+  source   https://monocypher.org
+
 bacnet-stack
   version  bacnet-stack-1.6.1
   license  GPL-2.0-or-later WITH GCC-exception-2.0, MIT, BSD-3-Clause (per file)
