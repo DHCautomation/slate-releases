@@ -1,0 +1,10 @@
+Release candidate 1 of 0.3.0: signed updates and signed install files, a storage reserve, MQTT writes to tagged points only, network fixes and the pre-release hardening.
+
+- Updates are signed by DHC: the unit checks the signature before it downloads anything. Install by file takes DHC's signed release files only (the signature is inside each file); files of older releases are refused. To go back to 0.2.0 by file, use the signed copies slatetap-0.2.0-signed.bin and www-0.2.0-signed.bin from this release.
+- Storage: 512 KB stay free so settings, users and alarms can always be saved; trend history shrinks first. System > Storage shows each store against its cap, and a banner warns while memory is low or storage is nearly full.
+- MQTT: writes reach only points tagged mqtt-write. BACnet/SC: a warning alarm when no hub has been connected for 10 minutes.
+- BACnet/IP: the broadcast table can no longer be rewritten from the network, and foreign devices register only with BBMD and their acceptance on.
+- After a Wi-Fi outage, MQTT, BACnet/SC and the fleet heartbeat come back within seconds; a cut web app upload leaves a recovery page, and the unit restores its web app by itself.
+- System > Status: an LED legend and a Board card. A firmware file or backup made for another product is refused, with the reason.
+- Logic on a phone: a tap on a block opens its settings and help. Deleting a program right after the schedules that wrote its points no longer floods the log.
+- An empty access point password left by 0.2.0 becomes the factory default, with a banner until a new one is saved.

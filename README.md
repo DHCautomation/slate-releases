@@ -12,13 +12,16 @@ repository, which checks what it writes before it commits and pushes.
 
 ```
 index.html                                 every release per product and channel, with links to the flasher pages
-slatetap-st1/stable/versions.json          the update feed of a channel (manifest format 2, compact JSON, 15 KB at most)
+slatetap-st1/stable/versions.json          the update feed of a channel (manifest format 3, every image signed, or 2 as
+                                           published before signed updates; compact JSON, 15 KB at most)
 slatetap-st1/stable/notes.json             the full notes of the versions the feed lists
 slatetap-st1/beta/...                      betas, after 24 h on the bench; every stable release is listed here too
 slatetap-st1/test/...                      the bench unit's channel (an override URL), never offered by a unit itself
 files/<version>/                           one release: slatetap-<version>.bin (firmware), www-<version>.bin (web app),
                                            slatetap-<version>-merged.bin (USB image from offset 0), manifest.json and
-                                           index.html (the flasher), notes.txt, SHA256SUMS.txt
+                                           index.html (the flasher), notes.txt, SHA256SUMS.txt; from 0.3.0-rc.1 on also
+                                           slatetap-0.2.0-signed.bin and www-0.2.0-signed.bin, 0.2.0's two files signed
+                                           for installs by file (the way back to 0.2.0)
 LICENSES/                                  third-party licenses and the bacnet-stack patch (LICENSES/README.md)
 .nojekyll                                  files are served as they are
 .gitattributes                             no line-ending conversion in any clone (the hashes of a version must hold)
