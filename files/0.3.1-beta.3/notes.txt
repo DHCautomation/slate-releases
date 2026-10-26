@@ -1,0 +1,7 @@
+Beta 3 of 0.3.1: equipment templates (one drawing per equipment type, shared by every device of that type) and floor plans with live device markers.
+
+- Equipment types (Graphics > Equipment types, admin): pick a drawing (VAV, rooftop unit, AHU, MUA, chiller, pump), map its values once to the objects of a sample device, tick the devices of that type. Each device then opens the same drawing with its own values.
+- A value with nothing mapped hides; a value without a reading shows a dash; a value older than a minute is greyed.
+- Setpoints: operators and admins write a mapped setpoint within the type's min and max at its priority; viewers read it only.
+- Floor plans: on a graphic, Markers places a marker for a discovered device by dragging it, on a phone or a laptop. A marker shows the device name and its value; grey when the device is offline, amber or red while it has an active alarm. A tap opens the device's drawing.
+- Drawings and plans pan and pinch-zoom on a phone. The unit reads a page's points only while it is open.
