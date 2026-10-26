@@ -1,0 +1,6 @@
+Beta 1 of 0.3.1: the firmware is now SlateBAS Edge, with the SlateBAS logo in the header and a new factory Wi-Fi password for new units.
+
+- The header shows the SlateBAS logo, "SlateBAS Edge" and the site name. The model (SlateTap ST-1) and the firmware version are on System > Status, the login page, the first screen of the setup wizard and the OLED splash.
+- The pages say "this unit" where they used to say "SlateTap".
+- New units: the access point password is slatebas1. A unit that already has a password keeps it, and a unit that ran an earlier firmware without setting one keeps slatetap1. A factory reset sets slatebas1.
+- BACnet: Model_Name is still the model (SlateTap ST-1). The device name, the access point name and the host name do not change.
