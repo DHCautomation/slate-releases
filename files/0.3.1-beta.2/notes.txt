@@ -1,0 +1,5 @@
+Beta 2 of 0.3.1: operators and viewers get a site menu of Home, Graphics, Points, Schedules, Alarms and Trends, and land on Home with the graphics.
+
+- Operator and viewer: the menu is Home, Graphics (with the site's pages), Points, Schedules, Alarms and Trends; the phone bar is Home, Graphics, Points, Alarms and Menu. Home lists the graphics first and leaves out the technical cards. A viewer's pages stay read-only.
+- Admin, and everyone on a unit without users: the menu and Home are as before.
+- Everything in 0.3.1-beta.1: the SlateBAS Edge brand and the slatebas1 access point password for new units.
