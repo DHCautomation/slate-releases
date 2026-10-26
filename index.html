@@ -44,12 +44,16 @@
     <h3>Update a SlateTap that runs</h3>
     <ul>
       <li><strong>0.3.0 and later:</strong> System &gt; Updates: pick the channel (Stable for sites, Beta for test
-        units), Check now, then Update now. The unit downloads both images and checks them itself.</li>
+        units), Check now, then Update to &lt;version&gt;. The unit downloads both images and checks them itself.</li>
       <li><strong>0.2.0:</strong> Settings &gt; Fleet, update manifest URL
         <code>https://dhcautomation.github.io/slate-releases/slatetap-st1/stable/versions.json</code> (or <code>.../beta/versions.json</code>), then Check
         and Update. Once on 0.3.x, the unit keeps that channel by itself.</li>
       <li><strong>Without internet on the unit:</strong> download the firmware and the web app images of a version
-        below on a phone or laptop, then install them by file: the firmware first, then the web app.</li>
+        below on a phone or laptop, then install them by file: the firmware first, then the web app (a unit back on
+        0.2.0 after it had users on 0.3.x: the web app first, then the firmware).</li>
+      <li><strong>From 0.3.0-rc.1</strong> a unit installs DHC's signed files only. To go back to 0.2.0 by file, use
+        the signed copies of its two files listed with each release from 0.3.0-rc.1 ("0.2.0 firmware (signed)",
+        "0.2.0 web app (signed)").</li>
     </ul>
   </div>
 
@@ -74,6 +78,9 @@
   </div>
   <div class="channel"><h3>Beta</h3>
   <p class="muted">Soaked on the bench for 24 h first. Units on the beta channel are offered these. Feed: <a href="slatetap-st1/beta/versions.json"><code>slatetap-st1/beta/versions.json</code></a></p>
+  <div class="rel"><div class="head"><a class="ver" href="files/0.3.0-rc.1/index.html">0.3.0-rc.1</a><span class="date">2026-10-24</span></div>
+    <p>Release candidate 1 of 0.3.0: signed updates and signed install files, a storage reserve, MQTT writes to tagged points only, network fixes and the pre-release hardening.</p>
+    <div class="links"><a href="files/0.3.0-rc.1/index.html">Flash (USB)</a> <a href="files/0.3.0-rc.1/notes.txt">Notes</a> <a href="files/0.3.0-rc.1/slatetap-0.3.0-rc.1.bin">Firmware</a> <a href="files/0.3.0-rc.1/www-0.3.0-rc.1.bin">Web app</a> <a href="files/0.3.0-rc.1/slatetap-0.3.0-rc.1-merged.bin">Merged image</a> <a href="files/0.3.0-rc.1/SHA256SUMS.txt">SHA-256</a> <a href="files/0.3.0-rc.1/slatetap-0.2.0-signed.bin">0.2.0 firmware (signed)</a> <a href="files/0.3.0-rc.1/www-0.2.0-signed.bin">0.2.0 web app (signed)</a></div></div>
   <div class="rel"><div class="head"><a class="ver" href="files/0.3.0-beta.2/index.html">0.3.0-beta.2</a><span class="date">2026-10-21</span></div>
     <p>Phase SC of 0.3.0: the BACnet/SC node, SC routing, Network Port and File objects, and standard commissioning.</p>
     <div class="links"><a href="files/0.3.0-beta.2/index.html">Flash (USB)</a> <a href="files/0.3.0-beta.2/notes.txt">Notes</a> <a href="files/0.3.0-beta.2/slatetap-0.3.0-beta.2.bin">Firmware</a> <a href="files/0.3.0-beta.2/www-0.3.0-beta.2.bin">Web app</a> <a href="files/0.3.0-beta.2/slatetap-0.3.0-beta.2-merged.bin">Merged image</a> <a href="files/0.3.0-beta.2/SHA256SUMS.txt">SHA-256</a></div></div>
