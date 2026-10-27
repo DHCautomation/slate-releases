@@ -1,0 +1,4 @@
+Beta 7 of 0.3.1: a fix, with everything of beta 6.
+
+- DHC link: a unit restarted while remote access was on "until turned off" could restart over and over. Fixed; beta 4 to 6 have the bug, so update before turning remote access on until turned off.
+- Everything of beta 6: binary values in the object's own words on drawings, help for the equipment pages, the 30-day cap of "until turned off", DHC's link roots.
