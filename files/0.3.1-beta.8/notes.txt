@@ -1,0 +1,4 @@
+Beta 8 of 0.3.1: a Test channel for admins, and the weather found from the site's address.
+
+- System > Updates: a Test channel beside Stable and Beta, for admins only ("Bench builds, not soaked."). A unit whose override URL was its own test channel now shows Test, with the override empty.
+- Weather: no more typing latitude and longitude. Turning the weather on looks up the site's Location (Settings > Device and site) and shows what it found, such as "Found: Ottawa, Ontario, Canada"; saving a new Location looks it up again. Coordinates can still be typed under Advanced when the lookup fails.

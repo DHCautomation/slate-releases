@@ -1,6 +1,0 @@
-Beta 6 of 0.3.1: words for binary values on drawings, help for the equipment pages, and DHC's link roots.
-
-- A binary value on a drawing shows the object's own words when the device gives them (Occupied or Unoccupied, Open or Closed), on equipment drawings, floor plan markers and site pages; without them, On or Off as before.
-- The equipment drawing, Equipment types and the floor plan markers have help sheets (the ? in the header).
-- DHC link: "until turned off" remote access now ends by itself after 30 days at most; the DHC link card says when.
-- DHC link: this firmware trusts DHC's own link roots. Until DHC's link service is open, a unit at the default host keeps retrying quietly.

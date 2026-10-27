@@ -1,7 +1,0 @@
-Beta 5 of 0.3.1: weather points from Open-Meteo for the site, the same 22 as SlateBAS's, every 15 minutes (no key).
-
-- Settings > Device and site > Weather: turn it on and give the site's latitude and longitude; the time zone is System > Time's.
-- The 22 points carry SlateBAS's names and units: outside temperature, humidity, dewpoint, wind, pressure, radiation, Sun Load Index, sunrise and sunset, Is Sun Up, degree days and more.
-- They are points of this unit: use them in Logic (Read point), pin them for limits, alarms and trends, bind them on graphics; BACnet clients read them too (AI 9001 and on).
-- Home shows a weather card.
-- A value Open-Meteo leaves out shows a dash. Is Sun Up changes at sunrise and sunset, not only at the refresh.

@@ -1,5 +1,0 @@
-dc20e0d84745abfc1930bc89d7442c8475a17e1c029d3fb05c98b6def6afaaf6  slatetap-0.2.0-signed.bin
-bba569ced30fb857016cd9e6b4c8c61d62bb275996661cf86a3d7813547fe52f  slatetap-0.3.1-beta.5-merged.bin
-66bb5a1b1e3a4c6e60acd31854355d8ed018287b0ac40bf4eafc2a5cdf629153  slatetap-0.3.1-beta.5.bin
-e07ca10988220f81ef2b07a34202e724a55e04cae0995683d90b2fcefde49ccf  www-0.2.0-signed.bin
-e05bd02748e078750f970d313ca741dc25d41df06363ea3d54c43b7f9cd3f97f  www-0.3.1-beta.5.bin

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SlateTap Flasher</title>
-<meta name="description" content="Install SlateTap ST-1 firmware 0.3.1-beta.4 from Chrome or Edge over USB.">
+<meta name="description" content="Install SlateTap ST-1 firmware 0.3.1-beta.8 from Chrome or Edge over USB.">
 <script type="module" src="https://unpkg.com/esp-web-tools@10.4.0/dist/web/install-button.js?module"></script>
 <style>
   :root {
@@ -35,8 +35,8 @@
 <body>
 <main>
   <h1>Slate<span>Tap</span> flasher</h1>
-  <p class="sub">SlateTap ST-1 firmware <strong>0.3.1-beta.4</strong> &middot; DHC Automation and Controls</p>
-  <p class="summary">Beta 4 of 0.3.1: the DHC link, one outbound connection to DHC for remote access, alarms and status (TCP 443 only). <a href="notes.txt">Release notes</a></p>
+  <p class="sub">SlateTap ST-1 firmware <strong>0.3.1-beta.8</strong> &middot; DHC Automation and Controls</p>
+  <p class="summary">Beta 8 of 0.3.1: a Test channel for admins, and the weather found from the site&#x27;s address. <a href="notes.txt">Release notes</a></p>
 
   <div class="card warn">
     <h2>Before you plug in</h2>
@@ -46,7 +46,7 @@
       <li>A fresh install <strong>erases the device</strong>: settings, Logic programs and points are lost. On a
         running SlateTap, download a backup first (0.3.x: System &gt; Backup; 0.2.x: Settings &gt; Backup and restore).</li>
       <li>To update a SlateTap that already runs, you do not need this page: use System &gt; Updates (0.3.x), or
-        install <code>slatetap-0.3.1-beta.4.bin</code>, then <code>www-0.3.1-beta.4.bin</code> by file
+        install <code>slatetap-0.3.1-beta.8.bin</code>, then <code>www-0.3.1-beta.8.bin</code> by file
         (0.3.x: System &gt; Updates &gt; Install from file; 0.2.x: Settings &gt; Firmware update).</li>
     </ol>
   </div>
@@ -59,7 +59,7 @@
       <li>Press the button and pick the port called <em>USB JTAG/serial debug unit</em> (Windows: "USB Serial Device").</li>
     </ol>
     <esp-web-install-button manifest="manifest.json">
-      <button slot="activate" class="btn">Install SlateTap 0.3.1-beta.4</button>
+      <button slot="activate" class="btn">Install SlateTap 0.3.1-beta.8</button>
       <span slot="unsupported">This browser cannot flash devices. Use Chrome or Edge on a computer.</span>
       <span slot="not-allowed">Flashing needs a secure page (https or localhost).</span>
     </esp-web-install-button>
@@ -78,7 +78,7 @@
   </div>
 
   <p class="muted">Files: <a href="manifest.json">manifest.json</a>, <a href="SHA256SUMS.txt">SHA256SUMS.txt</a>,
-    <a href="slatetap-0.3.1-beta.4-merged.bin">slatetap-0.3.1-beta.4-merged.bin</a> (from offset 0). Flashing by
+    <a href="slatetap-0.3.1-beta.8-merged.bin">slatetap-0.3.1-beta.8-merged.bin</a> (from offset 0). Flashing by
     ESP Web Tools (Apache-2.0). <a href="../../index.html">All releases</a>.</p>
 </main>
 </body>
