@@ -1,0 +1,8 @@
+Beta 4 of 0.3.1: the DHC link, one outbound connection to DHC for remote access, alarms and status (TCP 443 only).
+
+- System > DHC link: the link's state, the claim code and key fingerprint to give DHC (also on the unit's screen), and "Claimed by DHC for <client> / <site>" once claimed. With the link down the unit works exactly as before.
+- Remote access: off until an admin turns it on from the site's network, for 1 to 24 hours or until turned off. A DHC technician then reaches the unit's login page through DHC's portal and still needs a user of this unit. A unit without users is never reachable. While it is on the screen shows REMOTE and every page a Remote chip; turning it off ends every remote session.
+- Through the link, a few things stay on the site's network: turning remote access on, the link settings, backups and restores, installing by file, the factory reset.
+- Send alarms to DHC: critical and warning alarms go to DHC, which emails your contacts; the unit keeps every alarm and resends what the link could not deliver.
+- This beta holds no DHC root yet: at the default host the unit shows "No DHC root in this firmware" and does not connect. A later firmware pins DHC's roots.
+- Support: a network capture of what the unit sends (headers only), from the site's network.
