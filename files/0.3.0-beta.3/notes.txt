@@ -1,8 +1,0 @@
-Phase C of 0.3.0: schedules, alarm classes, email and webhook notifications, floor-plan pictures and graphic links, a kiosk screen.
-
-- Schedules: a week of events per day, exceptions and holidays (an Ontario list is offered), targets written at a priority, a BACnet object per schedule, and a Schedule block in Logic. Each day starts at the schedule's default value; without the time nothing is written.
-- Alarms: classes critical, warning and info (info never rings the bell), acknowledgements that name the user, offline alarms for devices, and the SlateTap's own alarms (clock, storage, memory, certificate).
-- Notifications: rules send alarm events by email or to webhooks; undelivered messages wait in a queue that survives a restart.
-- Graphics: links between pages, floor-plan pictures converted in the browser, the drawing's source view, five new drawings (make-up air unit, chiller, pump, air handler, floor plan), and a kiosk screen with a QR link.
-- Points: tags, favourites on Home, display decimals, bulk changes, and relinquish per priority slot.
-- Before going back to 0.2.0, relinquish schedule targets: 0.2.0 leaves their last commands in place.

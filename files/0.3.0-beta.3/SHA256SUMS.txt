@@ -1,3 +1,0 @@
-4ea1c69571ffbfbfd94934b51694b7cd6671aae282aaae00a7639dcd1c536b70  slatetap-0.3.0-beta.3-merged.bin
-cbaf81ea9a0b7d4cbf8cb43622df4e3a7d05d6ef018b1e723cd2bdf22e808119  slatetap-0.3.0-beta.3.bin
-67f9206793d7a27a9f758459367e545fc97c1a09f62535ec3d8bdc1f38b46a4a  www-0.3.0-beta.3.bin
