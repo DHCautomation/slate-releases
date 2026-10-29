@@ -1,0 +1,3 @@
+Beta 11 of 0.3.1: claiming a unit for the DHC link works when the code is entered more than a few minutes after it appears.
+
+- Beta 10 refused the certificate DHC sends when the claim code was entered more than about 5 minutes after the unit connected ("the certificate or its issuer is outside its dates"). The unit now checks it against the time it arrives. The same applies when the certificate is renewed.

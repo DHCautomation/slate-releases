@@ -1,4 +1,0 @@
-Beta 9 of 0.3.1: the DHC link matches DHC's relay as built.
-
-- Remote access: the unit now tells DHC's relay when its remote access period started, so the relay's 30-day limit ends with the unit's own.
-- After the link drops, the unit waits at least 35 seconds before it connects again, so a quick reconnect from another network is never taken for a copied key.
