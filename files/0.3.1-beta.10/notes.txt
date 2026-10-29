@@ -1,0 +1,3 @@
+Beta 10 of 0.3.1: the DHC link's wait after a drop now covers a connection that was cut.
+
+- After the link to DHC is cut (the network reset it, or it ended without a goodbye from DHC's relay), the unit waits at least 35 seconds before it connects again, as it already did after a timeout. Beta 9 reconnected within seconds after a cut.
