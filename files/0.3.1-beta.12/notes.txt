@@ -1,0 +1,7 @@
+Beta 12 of 0.3.1: DHC staff sign in once, new units enrol with DHC by themselves, and DHC can name a new unit.
+
+- DHC staff who reach a unit through the DHC link are signed in as themselves, with no password on the unit, and are named in its audit log. They cannot create users, passwords or API tokens there. The unit's own users and its local network work as before.
+- New setting under System > DHC link: "Allow DHC to open remote support from Ground Control". The screen that creates the first admin shows it ticked, with a sentence saying what it allows; clear it to keep remote support to the switch at the unit. On a unit that already has users it stays off until an admin turns it on.
+- A unit flashed with a DHC birth token enrols with DHC on its first connection, with no claim code, and deletes the token. A unit without a token, or reset, is claimed with the code as before.
+- Until it has its first user, a new unit's site name and device name can be set by DHC through the link.
+- The status the unit sends to DHC now includes its Wi-Fi signal and the number of active alarms.
